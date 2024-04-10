@@ -1,0 +1,142 @@
+css
+/* 全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/IMG_1046.PNG');
+    background-attachment:scroll;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    line-height: 1.6;
+
+    /* 为了让背景图片撑满整个页面 */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* 为了让内容垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 对<ul>标签进行全局样式设置，去掉默认的内边距和外边距 */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 使<li>标签横向排列，并设置内间距 */
+nav li {
+    display: inline-block; /* 或使用 'inline-flex' */
+    margin-right: 20px; /* 右侧外边距 */
+}
+
+/* 最后一个<li>标签不需要右侧边距 */
+nav li:last-child {
+    margin-right: 0;
+}
+
+/* 链接基本样式 */
+nav a {
+    text-decoration: none; /* 去掉下划线 */
+    color: black; /* 设置文字颜色 */
+}
+
+
+/* 头部样式 */
+header {
+    background-image: url('/images/196371712749010_.pic_hd.jpg');
+    background-attachment:scroll;
+    background-size: cover;
+    background-position: center;
+
+    padding: 60px 80px;/*为我解释这行代码*/
+    text-align: center;
+    color:rgba(255, 255, 255, 0.917);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    /* 为了让背景图片撑满整个头部 */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* 为了让内容垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header img {
+    max-width: 200px;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+
+
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 10px 0;
+}
+
+/* 导航菜单样式 */
+nav ul {
+    background-color: #343a40;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #b0ff06;
+}
+
+/* 主要内容区域样式 */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 页脚样式 */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
